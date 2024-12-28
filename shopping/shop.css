@@ -1,0 +1,243 @@
+:root{
+    --primary-color: rgb(228, 5, 5);
+    --secondary-color: rgba(17, 39, 167, 0.836);
+    --black: #141313;
+    --logo-color:#e2bd19; 
+    --white: #fff;
+    --box-shadow: 0.5rem .3rem rgba(0,0,0.1);
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+html{
+    font-size: 63.5%;
+    overflow-x:hidden;
+    overflow-y: hidde;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 6rem;
+
+}
+
+
+.header{
+    display: grid;
+    background: var(--primary-color);
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:1fr 5fr  1fr;
+    justify-items: center;
+    width: 99%;
+    margin: .1%;
+    height: 60%;
+    box-shadow: var(--box-shadow);
+    }
+
+
+    .header .nav{
+        position: relative;
+        top: -5%;
+        display: flex;
+        justify-content: center;
+        gap: 12rem;
+        margin: 1rem;
+        height:25;
+        width:90%;
+        font-size: 1.5rem;
+    }
+
+    .header .nav a{
+        width: 9rem;
+        text-align: center;
+        margin:.0rem 7px;
+        color:var(--white);
+        border-left: .1rem solid var(--white);
+        border-right: .1rem solid var(--white);
+    }
+    
+    .header .nav a:hover{
+        color: var(--secondary-color);
+        transform: scale(1.02);
+    }
+
+    
+    .header .nav a:focus{
+        color: var(--black);
+        transform: scale(0.7);
+    }
+    .header .box{
+        margin: 1rem;
+        width:100%;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        justify-content: center;
+        border: .1rem ridge rgba(246, 246, 248, 0.534);
+        gap: 9rem;}
+
+        .header .box .logo{
+            font-size: 5rem;
+            color: var(--logo-color);
+           margin: 1rem 1rem 1rem 6rem;
+           text-shadow: var(--box-shadow)
+       
+
+       }
+
+       .header .box h3{
+        position: relative;
+         font-size: 6.5rem;
+         color: var(--logo-color);
+        top: 12rem;
+        right: 17rem;
+        
+        text-shadow: var(--box-shadow)
+    
+    }
+    
+    .header .box  .fa-shopping-bag{
+        font-size: 12rem;
+        margin: 0;
+        position: relative;
+        top: 8rem;
+        left: 15rem;
+        color: var(--logo-color);
+        text-shadow: var(--box-shadow);
+        transform: rotate(-40deg);
+    }
+    
+    
+    .header .box  span{
+        color: var(--white);
+        position: relative;
+        top: 1rem;
+        transform: rotate(-45deg);
+    }
+    
+    .header .box  .text{
+        position: relative;
+        width:55rem;
+        height:9rem;
+        top:12rem;
+        right:47rem;
+        font-size: 2.7rem;
+        background: var(--white);
+        border-radius: 5rem 0 0 5rem;
+    
+    }
+    
+    .header .box .text:focus{
+        border: .2rem inset var(--black);
+        transform: scale(1.01);
+    
+    }
+    
+    .header .box .btn{
+        position: relative;
+        width: 30rem;
+        height: 30%;
+        top: 12.1rem;
+        right:5.3rem;
+        background:rgba(75, 13, 13, 0.377);
+        border-radius:  0 5rem 5rem 0;
+        font-size: 3rem;  
+        color: var(--white);
+        
+    }
+    
+    
+    .header .box .btn:focus{
+        color: var(--primary-color);
+        border:.1rem ridge var(--black) ;
+    }
+    
+    .header .box .fa-shopping-cart{
+        position: relative;
+        font-size: 6rem;
+        top: 12rem;
+        left: 2rem;
+        color: var(--logo-color);
+    
+    }
+    
+    .header .box .span h4{
+        position: relative;
+        font-size: 2rem;
+        color: var(--white);
+        top: -2rem;
+        right: 6rem;
+        display: none;
+    
+    
+    }
+    
+    .header .box .span:hover h4 {
+    display: block;
+    }
+    
+    .header .box span .cart-number{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background: var(--white);
+        position: absolute;
+        top: -2rem;
+        left: 5rem;
+    }
+    
+    .header .box span .cart-numbers{
+        position: absolute;
+        color: var(--primary-color);
+        font-size: 2rem;
+        left: 1rem;
+        top: 1rem;
+    }
+    
+    
+    
+    .header  .navv{
+        display: flex;
+        font-size: 2.3rem;
+        gap: 15rem;
+        margin-left: 2rem;
+        
+    }
+    
+    .header  .navv a{
+        color: var(--white);
+    }
+    
+    .header  .navv a:hover{
+     color: var(--secondary-color);
+     text-decoration: underline;
+    }
+    
+    .header  .navv a:first-child{
+        border-left: .1rem ridge var(--white);
+        margin-right:5rem;
+    
+    }
+    /*header section ends*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
